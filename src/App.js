@@ -38,12 +38,12 @@ function App() {
       <Header />
       <Container>
         <Home />
-        {/* <Projects />
+        <Projects />
         <Skills />
         <Testimonials />
-        <Contact /> */}
+        <Contact />
       </Container>
-      {/* <Footer /> */}
+      <Footer />
     </ThemeProvider>
   );
 }
