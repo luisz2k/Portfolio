@@ -35,9 +35,9 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      {/* <Header /> */}
+      <Header />
       <Container>
-        {/* <Home /> */}
+        <Home />
         {/* <Projects />
         <Skills />
         <Testimonials />
