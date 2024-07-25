@@ -29,6 +29,31 @@ const theme = createTheme({
       primary: "#FFFFFF",
     },
   },
+  typography: {
+    fontFamily: "Roboto Slab, Arial",
+    h1: {
+      fontWeight: 700,
+      fontSize: "6rem", // Optional: Set specific font size
+    },
+    h2: {
+      fontWeight: 700,
+      fontSize: "3.5rem", // Optional: Set specific font size
+    },
+    h3: {
+      fontWeight: 700,
+      fontSize: "3rem", // Optional: Set specific font size
+    },
+    h4: {
+      fontWeight: 700,
+      fontSize: "2.5rem", // Optional: Set specific font size
+    },
+    body1: {
+      fontSize: "1rem", // Optional: Set specific font size
+    },
+    body2: {
+      fontSize: "0.875rem", // Optional: Set specific font size
+    },
+  },
 });
 
 function App() {
