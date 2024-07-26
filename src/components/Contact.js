@@ -24,6 +24,11 @@ const Contact = () => {
     const templateID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
     const userID = process.env.REACT_APP_EMAILJS_USER_ID;
 
+    if (!serviceID || !templateID || !userID) {
+      alert("EmailJS configuration is missing.");
+      return;
+    }
+
     emailjs
       .send(serviceID, templateID, formData, userID)
       .then((response) => {
@@ -51,6 +56,7 @@ const Contact = () => {
               value={formData.name}
               onChange={handleChange}
               margin="normal"
+              inputProps={{ maxLength: 50 }}
               sx={{
                 "& .MuiInputLabel-root": {
                   color: "inherit", // Label color
@@ -75,6 +81,7 @@ const Contact = () => {
               value={formData.email}
               onChange={handleChange}
               margin="normal"
+              inputProps={{ maxLength: 100 }}
               sx={{
                 "& .MuiInputLabel-root": {
                   color: "inherit", // Label color
@@ -101,6 +108,7 @@ const Contact = () => {
               margin="normal"
               multiline
               rows={4}
+              inputProps={{ maxLength: 500 }}
               sx={{
                 "& .MuiInputLabel-root": {
                   color: "inherit", // Label color
@@ -119,7 +127,12 @@ const Contact = () => {
               }}
             />
             <Box textAlign="center" mt={2}>
-              <Button variant="contained" color="primary" type="submit">
+              <Button
+                variant="contained"
+                color="primary"
+                type="submit"
+                sx={{ px: "50px" }}
+              >
                 Send
               </Button>
             </Box>
