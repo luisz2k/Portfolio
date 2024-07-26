@@ -70,7 +70,7 @@ const Home = () => {
         <Grid item xs={12} md={6} container justifyContent="center">
           <Avatar
             alt="Profile Picture"
-            src={`${process.env.PUBLIC_URL}/profile-photo.jpg`} // TODO: replace this with a better photo lol
+            src={`${process.env.PUBLIC_URL}/images/profile-photo.jpg`} // TODO: replace this with a better photo lol
             sx={{ width: 400, height: 400 }}
           />
         </Grid>
