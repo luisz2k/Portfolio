@@ -27,7 +27,7 @@ const Home = () => {
                 developer.
               </Typography>
             </Box>
-            <Grid container spacing={2}>
+            <Grid container spacing={4}>
               <Grid item>
                 <Link
                   href="https://www.linkedin.com/in/luis-zhang-a45a1b183/"
