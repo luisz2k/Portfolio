@@ -2,6 +2,7 @@ import React from "react";
 import {
   Container,
   CssBaseline,
+  GlobalStyles,
   ThemeProvider,
   createTheme,
 } from "@mui/material";
@@ -57,6 +58,17 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
+      <GlobalStyles
+        styles={{
+          body: {
+            background: "linear-gradient(135deg, #1a1a1a, #2b2b2b)",
+            color: "white",
+            margin: 0,
+            fontFamily: "Roboto, sans-serif",
+            minHeight: "100vh",
+          },
+        }}
+      />
       <Header />
       <Container>
         <Home />
