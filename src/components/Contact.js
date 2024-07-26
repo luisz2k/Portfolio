@@ -4,7 +4,7 @@ import { Box, Typography, TextField, Button, Grid } from "@mui/material";
 const Contact = () => {
   return (
     <Box my={4}>
-      <Typography variant="h4" gutterBottom align="center">
+      <Typography variant="h2" gutterBottom align="center" mb={4}>
         Contact
       </Typography>
       <Grid container spacing={2} justifyContent="center">
@@ -12,22 +12,67 @@ const Contact = () => {
           <TextField
             fullWidth
             label="Name"
-            variant="outlined"
             margin="normal"
+            sx={{
+              "& .MuiInputLabel-root": {
+                color: "inherit", // Label color
+              },
+              "& .MuiOutlinedInput-root": {
+                "& fieldset": {
+                  borderColor: "inherit", // Border color
+                },
+                "&:hover fieldset": {
+                  borderColor: "primary", // Border color on hover
+                },
+                "&.Mui-focused fieldset": {
+                  borderColor: "primary", // Border color when focused
+                },
+              },
+            }}
           />
           <TextField
             fullWidth
             label="Email"
-            variant="outlined"
             margin="normal"
+            sx={{
+              "& .MuiInputLabel-root": {
+                color: "inherit", // Label color
+              },
+              "& .MuiOutlinedInput-root": {
+                "& fieldset": {
+                  borderColor: "inherit", // Border color
+                },
+                "&:hover fieldset": {
+                  borderColor: "primary", // Border color on hover
+                },
+                "&.Mui-focused fieldset": {
+                  borderColor: "primary", // Border color when focused
+                },
+              },
+            }}
           />
           <TextField
             fullWidth
             label="Message"
-            variant="outlined"
             margin="normal"
             multiline
             rows={4}
+            sx={{
+              "& .MuiInputLabel-root": {
+                color: "inherit", // Label color
+              },
+              "& .MuiOutlinedInput-root": {
+                "& fieldset": {
+                  borderColor: "inherit", // Border color
+                },
+                "&:hover fieldset": {
+                  borderColor: "primary", // Border color on hover
+                },
+                "&.Mui-focused fieldset": {
+                  borderColor: "primary", // Border color when focused
+                },
+              },
+            }}
           />
           <Box textAlign="center" mt={2}>
             <Button variant="contained" color="primary">
