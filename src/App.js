@@ -32,20 +32,17 @@ const theme = createTheme({
   typography: {
     fontFamily: "Roboto Slab, Arial",
     h1: {
-      fontWeight: 700,
+      fontWeight: 600,
       fontSize: "6rem", // Optional: Set specific font size
     },
     h2: {
-      fontWeight: 700,
       fontSize: "3.5rem", // Optional: Set specific font size
     },
     h3: {
-      fontWeight: 700,
       fontSize: "3rem", // Optional: Set specific font size
     },
     h4: {
-      fontWeight: 700,
-      fontSize: "2.5rem", // Optional: Set specific font size
+      fontSize: "2rem", // Optional: Set specific font size
     },
     body1: {
       fontSize: "1rem", // Optional: Set specific font size
