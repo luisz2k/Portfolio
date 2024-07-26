@@ -73,8 +73,8 @@ function App() {
       <Container>
         <Home />
         <Projects />
-        <Skills />
-        <Testimonials />
+        {/* <Skills /> */}
+        {/* <Testimonials /> */}
         <Contact />
       </Container>
       <Footer />
