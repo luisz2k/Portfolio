@@ -1,5 +1,13 @@
 import React from "react";
-import { Box, Typography, Avatar, Grid, Link, IconButton } from "@mui/material";
+import {
+  Box,
+  Typography,
+  Avatar,
+  Grid,
+  Link,
+  IconButton,
+  Button,
+} from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import YouTubeIcon from "@mui/icons-material/YouTube";
@@ -65,6 +73,21 @@ const Home = () => {
                 </Link>
               </Grid>
             </Grid>
+            <Box mt={4}>
+              <Button
+                variant="contained"
+                color="primary"
+                href={`${process.env.PUBLIC_URL}/cv.pdf`}
+                download
+                sx={{
+                  borderRadius: "8px",
+                  padding: "10px 20px",
+                  fontWeight: "bold",
+                }}
+              >
+                Download CV
+              </Button>
+            </Box>
           </Box>
         </Grid>
         <Grid item xs={12} md={6} container justifyContent="center">
