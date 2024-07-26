@@ -34,22 +34,22 @@ const theme = createTheme({
     fontFamily: "Roboto Slab, Arial",
     h1: {
       fontWeight: 600,
-      fontSize: "6rem", // Optional: Set specific font size
+      fontSize: "6rem",
     },
     h2: {
-      fontSize: "3.5rem", // Optional: Set specific font size
+      fontSize: "3.5rem",
     },
     h3: {
-      fontSize: "3rem", // Optional: Set specific font size
+      fontSize: "3rem",
     },
     h4: {
-      fontSize: "2rem", // Optional: Set specific font size
+      fontSize: "2rem",
     },
     body1: {
-      fontSize: "1rem", // Optional: Set specific font size
+      fontSize: "1rem",
     },
     body2: {
-      fontSize: "0.875rem", // Optional: Set specific font size
+      fontSize: "0.875rem",
     },
   },
 });
@@ -73,7 +73,7 @@ function App() {
       <Container>
         <Home />
         <Projects />
-        {/* <Skills /> */}
+        <Skills />
         {/* <Testimonials /> */}
         <Contact />
       </Container>
