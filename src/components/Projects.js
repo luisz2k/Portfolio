@@ -25,13 +25,15 @@ const projects = [
       "Full-stack restaurant ordering system that streamlines the entire order management process. The system allows customers to browse the menu, add dishes to their cart, and place orders seamlessly. It also enables wait staff to manage pending orders efficiently, kitchen staff to update the status of orders in real-time, and managers to easily update the menu.",
     technologies: ["Python", "Flask", "React", "Redux", "Bootstrap", "Cypress"],
     image: "/project2.png",
+    github: "https://github.com/luisz2k/Restaurant-Wait-System",
   },
   {
-    title: "TCP Client-Server Messaging Application",
+    title: "Client-Server Messaging Application",
     description:
       "Implemented a client-server model for a simple messaging and online video conferencing application based on Zoom, utilising socket programming in Python for client-server communication and multi-threading for handling multiple client connections concurrently. The application currently supports a range of functions including authentication, broadcasting text messages to all participants and displaying a list of active users.",
     technologies: ["Python", "Socket programming", "Multithreading"],
     image: "/project3.png",
+    github: "https://github.com/luisz2k/Messaging-App",
   },
   {
     title: "Mandelbrot",
@@ -39,6 +41,7 @@ const projects = [
       "My first ever university coding project! This involved implementing an algorithm to compute the Mandelbrot set and rendering it efficiently using modern graphics techniques. The tool allows users to zoom in and out, revealing the fractal's intricate and infinite detail.",
     technologies: ["C programming language"],
     image: "/project4.jpg",
+    github: "https://github.com/luisz2k/Mandelbrot",
   },
   // Add more projects as needed
 ];
@@ -82,7 +85,21 @@ const Projects = () => {
                 )}
               </CardContent>
               <CardActions>
-                <Button>Share</Button>
+                {project.github && (
+                  <Button
+                    color="secondary"
+                    variant="outlined"
+                    sx={{
+                      borderRadius: "8px",
+                      textTransform: "none",
+                      padding: "10px 20px",
+                      margin: "0 10px 20px",
+                    }}
+                    onClick={() => window.open(project.github, "_blank")}
+                  >
+                    GitHub
+                  </Button>
+                )}
               </CardActions>
             </Card>
           </Grid>
