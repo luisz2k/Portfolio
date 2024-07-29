@@ -15,7 +15,13 @@ const projects = [
     title: "AI Voice Assistant",
     description:
       "Developed multiple AI voice assistants tailored for different roles and responsibilities. The inbound agent handles customer service inquiries and appointment scheduling, while the outbound agent manages telemarketing cold calls and follow-up calls, ensuring efficient and targeted communication across various business functions.",
-    technologies: ["Python", "Vapi AI", "Make.com", "Twilio", "Google Sheets"],
+    technologies: [
+      "Python",
+      "Vapi AI",
+      "Make.com",
+      "Twilio",
+      "Google Sheets API",
+    ],
     image: `${process.env.PUBLIC_URL}/images/project1.jpeg`,
     youtube: "https://www.youtube.com/embed/7vCGNOhR3e0",
   },
@@ -55,7 +61,7 @@ const Projects = () => {
       <Grid container spacing={4}>
         {projects.map((project, index) => (
           <Grid item key={index} xs={12} md={6}>
-            <Card>
+            <Card sx={{ borderRadius: "16px" }}>
               <CardMedia
                 component="img"
                 height="140"
