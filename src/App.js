@@ -1,18 +1,15 @@
 import React from "react";
 import {
-  Container,
   CssBaseline,
   GlobalStyles,
   ThemeProvider,
   createTheme,
 } from "@mui/material";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
-import Home from "./components/Home";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
-import Testimonials from "./components/Testimonials";
-import Contact from "./components/Contact";
+import MainContent from "./components/MainContent";
 import Footer from "./components/Footer";
+import AIAutomation from "./components/AIAutomation"; // Import the new component
 
 const theme = createTheme({
   palette: {
@@ -69,15 +66,14 @@ function App() {
           },
         }}
       />
-      <Header />
-      <Container>
-        <Home />
-        <Projects />
-        <Skills />
-        {/* <Testimonials /> */}
-        <Contact />
-      </Container>
-      <Footer />
+      <Router basename="/Portfolio">
+        <Header />
+        <Routes>
+          <Route path="/" element={<MainContent />} />
+          <Route path="/ai-automation" element={<AIAutomation />} />
+        </Routes>
+        <Footer />
+      </Router>
     </ThemeProvider>
   );
 }
