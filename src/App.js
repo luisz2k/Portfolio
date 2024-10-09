@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import MainContent from "./components/MainContent";
 import Footer from "./components/Footer";
-import AIAutomation from "./components/AIAutomation"; // Import the new component
+import AIAutomation from "./pages/AIAutomation"; // Import the new component
 
 const theme = createTheme({
   palette: {
